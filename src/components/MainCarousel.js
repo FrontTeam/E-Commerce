@@ -39,4 +39,4 @@ img{
   height: 100%;
 }
 `;
-export default MainCarousel
+export default MainCarousel;
