@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import MainCarousel from './components/MainCarousel';
+import MainPage from './pages/MainPage';
+
 
 class App extends Component {
     render() {
         return (
             <div>
-                <MainCarousel/>
+              <MainPage/>
             </div>
         );
     }
