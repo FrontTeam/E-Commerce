@@ -1,10 +1,12 @@
 import React from 'react'
+import LogReg from '../components/LogReg';
 import MainCarousel from '../components/MainCarousel';
 
 function MainPage() {
     return (
         <div>
-              <MainCarousel/>
+            <MainCarousel />
+            <LogReg/>
         </div>
     )
 }

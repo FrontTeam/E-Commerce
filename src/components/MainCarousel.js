@@ -34,16 +34,6 @@ class MainCarousel extends Component {
 
 const  MainCarouselStyled = styled.div`
  position: relative;
-.jvXOvp {
-    height: 60vh;
-}
-.xzcEF{
-  position: absolute;
-  bottom: 20px;
-  background-color: #ffffff77;
-  padding:5px 10px;
-  border-radius: 50px;
-}
 img{
   width: 100%;
   height: 100%;
