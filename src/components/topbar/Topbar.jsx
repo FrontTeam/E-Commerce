@@ -5,7 +5,7 @@ import RoomOutlined from '@material-ui/icons/RoomOutlined'
 
 const Topbar = () => {
 
-    const [closedd , setClosedd] = useState(false)
+    const [closedd, setClosedd] = useState(false)
 
     return (
         <div className={"topbar " + (closedd && "active")}>
@@ -18,7 +18,22 @@ const Topbar = () => {
                 </div>
             </div>
             <div className="box2">
-                
+                <div className="minibox1">
+                    <RoomOutlined />
+                    <p>Toshkent</p>
+                    <p>uz</p>
+                </div>
+                <div className="minibox2">
+                    <a href="#">Qulay yetkazib berish</a>
+                    <a href="#">Maslahatchilarga</a>
+                    <a href="#">Artikul boyicha buyirtma</a>
+                    <a href="#">Yordam</a>
+                    <a href="#">Buyurtmani qayerdan olish kerak</a>
+                </div>
+                <div className="minibox3">
+                    <a href="">Kirish</a>
+                    <a href="">Royhatdan O'tkazish</a>
+                </div>
             </div>
         </div>
     );
