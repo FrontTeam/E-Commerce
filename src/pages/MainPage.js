@@ -6,10 +6,11 @@ import Topbar from '../components/topbar/Topbar';
 import Skidka from '../components/скидка/Skidka';
 import NewProducts from '../components/MainProducts/NewProducts';
 
+
+
 function MainPage() {
     return (
         <div>
-            <Skidka />
             <Topbar />
             <MainCarousel />
             <LogReg />
