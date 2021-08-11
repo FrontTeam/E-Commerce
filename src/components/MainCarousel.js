@@ -10,11 +10,11 @@ import Item5 from '../images/carousel/carousel5.jpg'
 class MainCarousel extends Component {
   state = {
     items: [
-      {id: 1, title: Item1},
-      {id: 2, title: Item2},
-      {id: 3, title: Item3},
-      {id: 4, title: Item4},
-      {id: 5, title: Item5}
+      {id: 1, title: Item1, link:"https:/google.com"},
+      {id: 2, title: Item2, link:"https:/google.com"},
+      {id: 3, title: Item3, link:"https:/google.com"},
+      {id: 4, title: Item4, link:"https:/google.com"},
+      {id: 5, title: Item5, link:"https:/google.com"}
     ]
   }
 
@@ -24,7 +24,9 @@ class MainCarousel extends Component {
       <MainCarouselStyled>
       <Carousel>
         {items.map(item => <div key={item.id}>
-          <img src={item.title} alt="carousel" />;
+          <a href={item.link}>
+            <img src={item.title} alt="carousel" />
+            </a>;
         </div>)}
         </Carousel>
       </MainCarouselStyled>

@@ -1,6 +1,7 @@
 import React from 'react'
 import LogReg from '../components/LogReg';
 import MainCarousel from '../components/MainCarousel';
+import MainBanner from "../components/MainBanner"
 import Topbar from '../components/topbar/Topbar';
 
 function MainPage() {
@@ -8,7 +9,8 @@ function MainPage() {
         <div>
             <Topbar />
             <MainCarousel />
-            <LogReg/>
+            <LogReg />
+            <MainBanner/>
         </div>
     )
 }
