@@ -2,10 +2,14 @@ import React from 'react';
 import './topbar.css';
 import { useState } from 'react';
 import RoomOutlined from '@material-ui/icons/RoomOutlined'
+import Search from '@material-ui/icons/Search'
+import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
+import ImportContactsTwoToneIcon from '@material-ui/icons/ImportContactsTwoTone';
+import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
 const Topbar = () => {
 
-    const [closedd , setClosedd] = useState(false)
+    const [closedd, setClosedd] = useState(false)
 
     return (
         <div className={"topbar " + (closedd && "active")}>
@@ -18,7 +22,55 @@ const Topbar = () => {
                 </div>
             </div>
             <div className="box2">
-                
+                <div className="minibox1">
+                    <div className="miniboxx">
+                        <RoomOutlined className="mark" />
+                        <p className="p1">Toshkent</p>
+                    </div>
+                    <span>|</span>
+                    <p className="p2">uz</p>
+                </div>
+                <div className="minibox2">
+                    <a href="#">Qulay yetkazib berish</a>
+                    <a href="#">Maslahatchilarga</a>
+                    <a href="#">Artikul boyicha buyirtma</a>
+                    <a href="#">Yordam</a>
+                    <a href="#">Buyurtmani qayerdan olish kerak</a>
+                </div>
+                <div className="minibox3">
+                    <a href="#">Kirish</a>
+                    <span className="span1">|</span>
+                    <a href="#">Royhatdan O'tkazish</a>
+                </div>
+            </div>
+            <div className="box3">
+                <div className="child1">
+                    <div className="spanbox">
+                        <div className="line3"></div>
+                        <div className="line4"></div>
+                        <div className="line5"></div>
+                    </div>
+                    <img src="https://img.faberlic.com/medias/faberlic-logo.svg?context=bWFzdGVyfGltYWdlc3w5NTE1fGltYWdlL3N2Zyt4bWx8c3lzLW1hc3Rlci9
+                   pbWFnZXMvaDNlL2gwNy9oMDAvOTAxODg4NTkzMTAzOC9mYWJlcmxpY19sb2dvLnN2Z3w1OWZiY2JhNDA4MzkzYzZjNGJmNDgwNDkwODU1NGY3ODdhMmU3NzQwZGRmNjNiZThjOWEwYzZiODE1OWRlNTM2"/>
+                </div>
+                <div className="child2">
+                    <Search className="search" />
+                    <input type="text" placeholder="Faberlicdan izlash"></input>
+                </div>
+                <div className="child3">
+                    <div className="boxmini1">
+                        <ImportContactsTwoToneIcon className="icon2"/>
+                        <h4>Katalog</h4>
+                    </div>
+                    <div className="boxmini1">
+                        <FavoriteBorderOutlinedIcon className="icon2"/>
+                        <h4>Tanlanganlar</h4>
+                    </div>
+                    <div className="boxmini1">
+                        <ShoppingCartOutlinedIcon className="icon2"/>
+                        <h4>Savat</h4>
+                    </div>
+                </div>
             </div>
         </div>
     );
