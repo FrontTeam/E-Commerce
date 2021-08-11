@@ -6,7 +6,7 @@ function MainBanner() {
     return (
         <MainBannerStyled>
             <a href="/#">
-                <img src={Ads} alt="sovga" />;
+                <img src={Ads} alt="sovga" />
             </a>
         </MainBannerStyled>
     )
