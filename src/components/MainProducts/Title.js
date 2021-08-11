@@ -16,9 +16,10 @@ function Title({title , link}) {
 }
 
 const TitleStyled = styled.div`
+
 display: flex;
 justify-content: space-between;
-padding: 50px 0;
+padding: 50px 60px;
 align-items: center;
 span{
     content: '';
