@@ -29,10 +29,23 @@ const LogRegStyled = styled.div`
 margin-top: 50px;
  display: grid;
  grid-template-columns: 50% 50%;
- padding: 0 70px;
+ padding: 0 80px 0 60px ;
  gap: 20px;
  div{
-     box-shadow: 5px 0 15px black;
+     box-shadow: 2px   0 7px black;
+     padding: 20px;
+     .title{
+      position: relative;
+      &::after{
+          position: absolute;
+          content: '';
+          background-color: black;
+          width: 50px;
+          height: 2px;
+          left: 0;
+          top: -10px;
+      }
+     }
  }
 
 
