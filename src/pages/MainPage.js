@@ -4,6 +4,7 @@ import MainCarousel from '../components/MainCarousel';
 import MainBanner from "../components/MainBanner"
 import Topbar from '../components/topbar/Topbar';
 import NewProducts from '../components/MainProducts/NewProducts';
+import MainOffers from '../components/MainOffers/MainOffers';
 
 
 
@@ -14,7 +15,9 @@ function MainPage() {
             <MainCarousel />
             <LogReg />
             <MainBanner />
-            <NewProducts/>
+            <NewProducts />
+            <MainOffers />
+            
         </div>
     )
 }
