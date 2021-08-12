@@ -5,6 +5,7 @@ import MainBanner from "../components/MainBanner"
 import Topbar from '../components/topbar/Topbar';
 import NewProducts from '../components/MainProducts/NewProducts';
 import MainOffers from '../components/MainOffers/MainOffers';
+import BestSeller from '../components/BestSeller/BestSeller';
 
 
 
@@ -17,7 +18,7 @@ function MainPage() {
             <MainBanner />
             <NewProducts />
             <MainOffers />
-            
+            <BestSeller /> 
         </div>
     )
 }

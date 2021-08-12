@@ -1,15 +1,41 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import offer1 from '../../images/offers/offer1.jpg'
+import offer2 from '../../images/offers/offer2.jpg'
+import offer3 from '../../images/offers/offer3.jpg'
+import offer4 from '../../images/offers/offer4.jpg'
+import offer5 from '../../images/offers/offer5.jpg'
+import offer6 from '../../images/offers/offer6.jpg'
+import offer7 from '../../images/offers/offer7.jpg'
 
 class OffersSlides extends Component {
     state = {
         items: [
-            { id: 1, title: 'item #1' },
-            { id: 2, title: 'item #2' },
-            { id: 3, title: 'item #3' },
-            { id: 4, title: 'item #4' },
-            { id: 5, title: 'item #5' }
+            { id: 1,
+              title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+              img:offer1 },
+            { id: 2,
+              title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+              img:offer2 },
+            { id: 3,
+              title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+              img:offer3 },
+            { id: 4,
+              title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+              img:offer4 },
+            { id: 5,
+              title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+                img: offer5
+            },
+            { id: 6,
+                title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+                img: offer6
+            },
+            { id: 7,
+                title: 'Biomica mitsellyar suvi, terining mikrobiomasiga gamxorlik qiladi. Aminokislotalar va iz elementli agent barcha teri turlari, ayniqsa sezgir teri uchun mos keladi! Yilning eng yaxshi bahosida gozallik mahsulotini xarid qilish imkoniyatini boy bermang!',
+                img:offer7 }
         ]
     }
   
@@ -30,7 +56,11 @@ class OffersSlides extends Component {
         return (
             <OfferSlidesStyled>
              <Carousel breakPoints={this.breakPoints}>
-               {items.map(item => <div key={item.id}>{item.title}</div>)}
+                    {items.map(item => <div className="item" key={item.id}>
+                        <a href="/#"><img src={item.img} alt="alt" /></a>
+                        <p className="item-title">{item.title} </p>
+                        <a className="link" href="/#"> Batafsilroq <ChevronRightIcon/> </a>
+                    </div>)}
               </Carousel>
             </OfferSlidesStyled>
         )
@@ -38,6 +68,35 @@ class OffersSlides extends Component {
 }
 
 const OfferSlidesStyled = styled.div`
+.item{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 80%;
+    }
+    p{
+        width: 80%;
+        text-align: justify;
+        padding: 10px 0;
+        font-size: 14px;
+        font-weight: 300;
+        color: #333;
+        letter-spacing: 1.5px;
+    }
+    .link{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: black;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: 300;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
 .rec.rec-arrow {
     border-radius: 0;
 }
