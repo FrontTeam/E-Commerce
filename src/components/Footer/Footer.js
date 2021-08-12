@@ -54,11 +54,11 @@ export const Footer = () => {
                     <div className="footerSocialNetwork">
                         <span>Ijtimoiy tarmoq</span>
                         <ul>
-                            <li><a href="#">{youtobe}</a></li>
                             <li><a href="#">{insta}</a></li>
-                            <li><a href="#">{ok}</a></li>
                             <li><a href="#">{vk}</a></li>
                             <li><a href="#">{face}</a></li>
+                            <li><a href="#">{ok}</a></li>
+                            <li><a href="#">{youtobe}</a></li>
                             <li><a href="#"><img src={yandexZen} alt="error img" /></a></li>
                         </ul>
                         <div className="footerLaast">
