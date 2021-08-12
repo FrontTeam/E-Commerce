@@ -10,12 +10,13 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 const Topbar = () => {
 
     const [closedd, setClosedd] = useState(false)
+    const [larged, setLarged] = useState(false)
 
     return (
         <div className={"topbar " + (closedd && "active")}>
             <div className="box1">
-                <p>Зарегистрируйтесь и получите скидку 20%</p>
-                <span>подробное</span>
+                <p>Ro'yxatdan o'ting va 20% chegirma oling</p>
+                <span>Batafsil</span>
                 <div className="closebox" onClick={() => setClosedd(!closedd)}>
                     <div className="line1"></div>
                     <div className="line2"></div>
@@ -54,23 +55,37 @@ const Topbar = () => {
                    pbWFnZXMvaDNlL2gwNy9oMDAvOTAxODg4NTkzMTAzOC9mYWJlcmxpY19sb2dvLnN2Z3w1OWZiY2JhNDA4MzkzYzZjNGJmNDgwNDkwODU1NGY3ODdhMmU3NzQwZGRmNjNiZThjOWEwYzZiODE1OWRlNTM2"/>
                 </div>
                 <div className="child2">
-                    <Search className="search" />
-                    <input type="text" placeholder="Faberlicdan izlash"></input>
+                    <Search className={"search " + (larged && 'active1')} />
+                    <input type="text" placeholder="Faberlicdan izlash" className={" " + (larged && 'active1')} onClick={() => setLarged(true)}></input>
                 </div>
                 <div className="child3">
                     <div className="boxmini1">
-                        <ImportContactsTwoToneIcon className="icon2"/>
+                        <ImportContactsTwoToneIcon className="icon2" />
                         <h4>Katalog</h4>
                     </div>
                     <div className="boxmini1">
-                        <FavoriteBorderOutlinedIcon className="icon2"/>
+                        <FavoriteBorderOutlinedIcon className="icon2" />
                         <h4>Tanlanganlar</h4>
                     </div>
                     <div className="boxmini1">
-                        <ShoppingCartOutlinedIcon className="icon2"/>
+                        <ShoppingCartOutlinedIcon className="icon2" />
                         <h4>Savat</h4>
                     </div>
                 </div>
+            </div>
+            <div className="box4">
+                <ul>
+                    <a href="/#">yangi</a>
+                    <a href="/#">Aksiyalar</a>
+                    <a href="/#">parvarish</a>
+                    <a href="/#">pardoz</a>
+                    <a href="/#">parfyumeriya</a>
+                    <a href="/#">moda</a>
+                    <a href="/#">uy</a>
+                    <a href="/#">sog'liqni saqlash</a>
+                    <a href="/#">mahsulatlar</a>
+                    <a href="/#">biznes</a>
+                </ul>
             </div>
         </div>
     );
