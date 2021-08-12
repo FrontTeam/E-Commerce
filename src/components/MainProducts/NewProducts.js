@@ -7,7 +7,6 @@ function NewProducts() {
     return (
         <NewProductsStyled>
             <Title title={'Yangi narsalar'} link={'Hammasini korish'}/>
-             
             <ProductSlides/>
         </NewProductsStyled>
     )
