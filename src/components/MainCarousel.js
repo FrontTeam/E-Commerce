@@ -36,6 +36,7 @@ class MainCarousel extends Component {
 
 const  MainCarouselStyled = styled.div`
  position: relative;
+padding-top: 250px;
 img{
   width: 100%;
   height: 100%;
