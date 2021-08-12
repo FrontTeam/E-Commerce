@@ -36,9 +36,27 @@ class MainCarousel extends Component {
 
 const  MainCarouselStyled = styled.div`
  position: relative;
+padding-top: 250px;
 img{
   width: 100%;
   height: 100%;
+}
+.rec.rec-arrow {
+    border-radius: 0;
+}
+/* round buttons on hover */
+.rec.rec-arrow:hover {
+    border-radius: 0;
+}
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
 }
 `;
 export default MainCarousel;

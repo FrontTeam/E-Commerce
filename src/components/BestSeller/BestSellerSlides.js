@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
 import styled from 'styled-components';
-import Product1 from "../../images/Products/product1.jpg"
-import Product2 from "../../images/Products/product2.jpg"
+import seller1 from "../../images/BestSeller/seller1.jpg"
+import seller2 from "../../images/BestSeller/seller2.jpg"
+import seller3 from "../../images/BestSeller/seller3.jpg"
 import FavoriteBorderIcon from '@material-ui/icons/Favorite';
-class ProductSlides extends Component {
+
+class BestSellerSlides extends Component {
     state = {
       items: [
-        {id: 1, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 2, title: 'Valkyrie Eau de Parfum for Her',img:Product2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 3, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 4, title: 'Valkyrie Eau de Parfum for Her',img:Product2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 5, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 6, title: 'Valkyrie Eau de Parfum for Her',img:Product2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 7, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 8, title: 'Valkyrie Eau de Parfum for Her',img:Product2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 9, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 10, title: 'Valkyrie Eau de Parfum for Her',img:Product2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
-        {id: 11, title: 'Valkyrie Eau de Parfum for Her',img:Product1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'}
+        {id: 1, title: 'Valkyrie Eau de Parfum for Her',img:seller1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 2, title: 'Valkyrie Eau de Parfum for Her',img:seller2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 3, title: 'Valkyrie Eau de Parfum for Her',img:seller3, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 4, title: 'Valkyrie Eau de Parfum for Her',img:seller1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 5, title: 'Valkyrie Eau de Parfum for Her',img:seller2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 6, title: 'Valkyrie Eau de Parfum for Her',img:seller3, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 7, title: 'Valkyrie Eau de Parfum for Her',img:seller1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 8, title: 'Valkyrie Eau de Parfum for Her',img:seller2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 9, title: 'Valkyrie Eau de Parfum for Her',img:seller3, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 10, title: 'Valkyrie Eau de Parfum for Her',img:seller1, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'},
+        {id: 11, title: 'Valkyrie Eau de Parfum for Her',img:seller2, oldprice:'97 000 uzs' ,newprice:'37 500 uzs'}
       ]
     }
 
@@ -36,12 +38,11 @@ class ProductSlides extends Component {
     render () {
       const { items } = this.state;
         return (
-        <ProductSlidesStyled>
+        <BestSellerSlidesStyled>
                 <Carousel breakPoints={this.breakPoints}>
               {items.map(item => <div className="item" key={item.id}>
                 <div className="product-top" >
-                      <p className="new">New</p>
-                      <p className="price">Super price</p>
+                      <p className="price">Xit</p>
                       <FavoriteBorderIcon className="heart"/>
                   </div>
                   <a href="/#">
@@ -62,12 +63,12 @@ class ProductSlides extends Component {
                 </a>
               </div>)}
         </Carousel>
-        </ProductSlidesStyled>
+        </BestSellerSlidesStyled>
       )
     }
 }
   
-const ProductSlidesStyled = styled.div`
+const BestSellerSlidesStyled = styled.div`
 .rec.rec-arrow {
     border-radius: 0;
 }
@@ -108,14 +109,9 @@ const ProductSlidesStyled = styled.div`
     padding: 10px;
     gap: 10px;
     z-index: 3;
+    justify-content: space-between;
 }
-.new{
-    padding: 5px 10px;
-    background-color: rgb(123,238,206);
-    border-radius: 50px;
-    font-size: 14px;
-    cursor: pointer;
-}
+
 .price{
     background-color: #E0727F;
     border-radius: 50px;
@@ -172,4 +168,4 @@ const ProductSlidesStyled = styled.div`
      }
 
 `
-export default ProductSlides
+export default BestSellerSlides
