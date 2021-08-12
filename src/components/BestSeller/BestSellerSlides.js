@@ -91,6 +91,7 @@ const BestSellerSlidesStyled = styled.div`
     background-color: white;
     height: 100%;
     padding: 10px;
+    border: 1px solid #00000050;
     &:hover{
         box-shadow: 5px 0 15px #00000050;
     }
