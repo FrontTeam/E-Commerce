@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className="container">
                 <div className="footerRow">
                     <div className="footerLogo">
-                        <a href="3"> 
+                        <a href="#"> 
                             <img src={logo} alt="error img " />
                          </a>
                     </div>
