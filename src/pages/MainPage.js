@@ -6,13 +6,18 @@ import Topbar from '../components/topbar/Topbar';
 import NewProducts from '../components/MainProducts/NewProducts';
 import MainOffers from '../components/MainOffers/MainOffers';
 import BestSeller from '../components/BestSeller/BestSeller';
-
+import { useState } from 'react'
+import Menu from '../components/menuList/MenuList';
 
 
 function MainPage() {
+
+    const [menuOpen,setMenuOpen] = useState(false)
+
     return (
         <div>
-            <Topbar />
+            <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+            <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <MainCarousel />
             <LogReg />
             <MainBanner />

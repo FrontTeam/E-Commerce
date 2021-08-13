@@ -7,7 +7,7 @@ import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutline
 import ImportContactsTwoToneIcon from '@material-ui/icons/ImportContactsTwoTone';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 
-const Topbar = () => {
+const Topbar = ({menuOpen, setMenuOpen}) => {
 
     const [closedd, setClosedd] = useState(false)
     const [larged, setLarged] = useState(false)
@@ -46,7 +46,7 @@ const Topbar = () => {
             </div>
             <div className="box3">
                 <div className="child1">
-                    <div className="spanbox">
+                    <div className={"spanbox " + (menuOpen && 'active2')} onClick={() => setMenuOpen(!menuOpen)}>
                         <div className="line3"></div>
                         <div className="line4"></div>
                         <div className="line5"></div>
