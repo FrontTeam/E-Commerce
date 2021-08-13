@@ -248,6 +248,7 @@
     background-color: black;
     height: 3px;
     transform-origin: left;
+    border-radius: 30px;
     transition: 0.5s;
 }
 .line4
@@ -256,6 +257,7 @@
     background-color: black;
     margin-bottom: 8.4px;
     margin-top: 8.4px;
+    border-radius: 30px;
     height: 3px;
     transition: 0.5s;
 }
@@ -264,6 +266,7 @@
     width: 33px;
     background-color: black;
     height: 3px;
+    border-radius: 30px;
     transform-origin: left;
     transition: 0.5s;
 }
