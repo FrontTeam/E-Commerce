@@ -4,6 +4,7 @@ import MainCarousel from '../components/MainCarousel';
 import MainBanner from "../components/MainBanner"
 import Topbar from '../components/topbar/Topbar';
 import NewProducts from '../components/MainProducts/NewProducts';
+import Footer from '../components/Footer';
 import MainOffers from '../components/MainOffers/MainOffers';
 import BestSeller from '../components/BestSeller/BestSeller';
 import { useState } from 'react'
@@ -21,9 +22,11 @@ function MainPage() {
             <MainCarousel />
             <LogReg />
             <MainBanner />
+            <NewProducts/>
             <NewProducts />
             <MainOffers />
             <BestSeller /> 
+            <Footer/>
         </div>
     )
 }
