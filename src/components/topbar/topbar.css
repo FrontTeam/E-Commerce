@@ -199,12 +199,13 @@
 .child1
 {
     width: 17%;
+    height: 80%;
     display: flex;
     margin-left: 40px;
     padding-left: 15px;
     padding-right: 15px;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     transition: 0.5s;
 }
 .child1 img
@@ -213,16 +214,17 @@
 }
 .spanbox
 {
-    width: 55px;
+    width: 60px;
     padding-left: 5px;
-    height: 32px;
+    height: 34px;
     padding-right: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    overflow: hidden;
     cursor: pointer;
     transform-origin: left;
+    justify-content: center;
     transition: 0.5s;
 }
 .spanbox.active2 .line3
@@ -242,24 +244,26 @@
 }
 .line3
 {
-    width: 100%;
+    width: 33px;
     background-color: black;
-    height: 4px;
+    height: 3px;
     transform-origin: left;
     transition: 0.5s;
 }
 .line4
 {
-    width: 100%;
+    width: 33px;
     background-color: black;
-    height: 4px;
+    margin-bottom: 8.4px;
+    margin-top: 8.4px;
+    height: 3px;
     transition: 0.5s;
 }
 .line5
 {
-    width: 100%;
+    width: 33px;
     background-color: black;
-    height: 4px;
+    height: 3px;
     transform-origin: left;
     transition: 0.5s;
 }
