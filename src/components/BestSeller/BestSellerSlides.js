@@ -87,17 +87,28 @@ const BestSellerSlidesStyled = styled.div`
     box-shadow: inset 0 0 1px 1px lightgrey;
 }
 .item{
+    margin: 20px 0;
+    &:hover .login{
+             background-color: black;
+             color: white;
+            
+         }
     text-decoration: none;
     background-color: white;
     height: 100%;
     padding: 10px;
-    border: 1px solid #00000050;
+    
     &:hover{
         box-shadow: 5px 0 15px #00000050;
     }
+    a{
+        display: flex;
+        justify-content: center;
+    }
     img{
-        width: 90%;
-        height: 60%;
+        width: 70%;
+        height: 50%;
+       
     }
     .title{
         font-size: 14px;
@@ -160,11 +171,7 @@ const BestSellerSlidesStyled = styled.div`
          width: 100%;    
          border: 1px solid #00000050;
          padding: 6px 10px;
-         &:hover{
-             background-color: black;
-             color: white;
-            
-         }
+         
      }
 
 `

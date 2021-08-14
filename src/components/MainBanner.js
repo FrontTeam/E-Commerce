@@ -14,6 +14,7 @@ function MainBanner() {
 
 const MainBannerStyled = styled.div`
 margin-top: 50px;
+overflow: hidden;
  padding: 0 60px ;
  img{
      width: 100%;

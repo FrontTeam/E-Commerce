@@ -11,6 +11,7 @@ import { useState } from 'react'
 import Menu from '../components/menuList/MenuList';
 
 
+
 function MainPage() {
 
     const [menuOpen,setMenuOpen] = useState(false)
@@ -22,11 +23,11 @@ function MainPage() {
             <MainCarousel />
             <LogReg />
             <MainBanner />
-            <NewProducts/>
             <NewProducts />
             <MainOffers />
             <BestSeller /> 
-            <Footer/>
+            <Footer />
+
         </div>
     )
 }

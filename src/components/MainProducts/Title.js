@@ -1,16 +1,15 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-function Title({title , link}) {
+
+function Title({title , link, to}) {
     return (
         <TitleStyled>
             <h2 className="title">
                 {title}
             </h2>
             <span></span>
-            <a href="/#" className="link">
-                {link}
-            </a>
+           
         </TitleStyled>
     )
 }
