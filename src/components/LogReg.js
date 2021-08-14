@@ -38,7 +38,7 @@ const LogRegStyled = styled.div`
 margin-top: 50px;
  display: grid;
  grid-template-columns: 50% 50%;
- padding: 0 80px 0 60px ;
+ padding: 20px 80px 20px 60px ;
  gap: 20px;
  div{
      box-shadow: 2px 0 7px #00000050;

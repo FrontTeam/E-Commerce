@@ -6,7 +6,7 @@ import logo from "../../images/footerImg/footerlogo-v11.webp"
 import yandexZen from "../../images/footerImg/Yandex_Zen_logo_icon.svg"
 import app from "../../images/footerImg/appstore-banner.png"
 import googlePlay from "../../images/footerImg/googleplay-banner.webp"
-import { faFacebook, faFacebookF, faInstagram, faOdnoklassniki, faVk, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {  faFacebookF, faInstagram, faOdnoklassniki, faVk, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const youtobe = <FontAwesomeIcon icon={faYoutube} />
 const insta = <FontAwesomeIcon icon={faInstagram} />
@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className="container">
                 <div className="footerRow">
                     <div className="footerLogo">
-                        <a href="3"> 
+                        <a href="#"> 
                             <img src={logo} alt="error img " />
                          </a>
                     </div>
@@ -54,12 +54,12 @@ export const Footer = () => {
                     <div className="footerSocialNetwork">
                         <span>Ijtimoiy tarmoq</span>
                         <ul>
-                            <li><a href="3">{youtobe}</a></li>
-                            <li><a href="3">{insta}</a></li>
-                            <li><a href="3">{ok}</a></li>
-                            <li><a href="3">{vk}</a></li>
-                            <li><a href="3">{face}</a></li>
-                            <li><a href="3"><img src={yandexZen} alt="error img" /></a></li>
+                            <li><a href="#">{insta}</a></li>
+                            <li><a href="#">{vk}</a></li>
+                            <li><a href="#">{face}</a></li>
+                            <li><a href="#">{ok}</a></li>
+                            <li><a href="#">{youtobe}</a></li>
+                            <li><a href="#"><img src={yandexZen} alt="error img" /></a></li>
                         </ul>
                         <div className="footerLaast">
                             <p>Ilovani yuklab oling</p>

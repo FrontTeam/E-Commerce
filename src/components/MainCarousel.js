@@ -34,7 +34,10 @@ class MainCarousel extends Component {
   }
 }
 
-const  MainCarouselStyled = styled.div`
+const MainCarouselStyled = styled.div`
+div{
+  overflow: hidden;
+}
  position: relative;
 padding-top: 250px;
 img{

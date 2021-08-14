@@ -14,6 +14,7 @@ function BestSeller() {
 
 const BestSellerStyled = styled.div`
 
+background-color: #cccccc50;
 
 `
 
