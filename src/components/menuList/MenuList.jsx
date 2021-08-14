@@ -11,92 +11,127 @@ import HealingOutlinedIcon from '@material-ui/icons/HealingOutlined';
 import CardGiftcardOutlinedIcon from '@material-ui/icons/CardGiftcardOutlined';
 import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
 import WidgetsOutlinedIcon from '@material-ui/icons/WidgetsOutlined';
+import { useState } from 'react'
 
 const MenuList = ({ menuOpen, setMenuOpen }) => {
+
+    const [selected, setSelected] = useState("Mahsulotlar")
+
+    const List = [
+        {
+            id: "1",
+            icon: <PermIdentityOutlinedIcon className="icon1" />,
+            title: "Kirish va ro'yxatdan o'tish",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "2",
+            icon: <ShoppingBasketOutlinedIcon className="icon1" />,
+            title: "Mahsulotlar",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "3",
+            icon: <WhatshotOutlinedIcon className="icon1" />,
+            title: "Yangi",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "4",
+            icon: <FaceIcon className="icon1" />,
+            title: "Parvarish",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "5",
+            icon: <FaceOutlinedIcon className="icon1" />,
+            title: "Pardoz",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "6",
+            i: <i class="fas fa-tshirt"></i>,
+            title: "Moda",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "7",
+            i: <i class="fab fa-product-hunt"></i>,
+            title: "Parfyumeriya",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "8",
+            icon: <HomeOutlinedIcon className="icon1" />,
+            title: "Uy",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "9",
+            icon: <HealingOutlinedIcon className="icon1" />,
+            title: "Sog'liqni Saqlash",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "10",
+            i: <i class="fas fa-apple-alt"></i>,
+            title: "Mahsulotlar",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "11",
+            icon: <BusinessCenterOutlinedIcon className="icon1" />,
+            title: "Biznes",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "12",
+            icon: <CardGiftcardOutlinedIcon className="icon1" />,
+            title: "Aksiya",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            li4: "Batafsil"
+        },
+        {
+            id: "13",
+            icon: <BusinessRoundedIcon className="icon1" />,
+            title: "Kompaniya",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "14",
+            icon: <WidgetsOutlinedIcon className="icon1" />,
+            title: "Xizmat",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "15",
+            i: <i class="far fa-map"></i>,
+            title: "Ixtiyoriy",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+        {
+            id: "16",
+            i: <i class="fas fa-satellite-dish"></i>,
+            title: "Jonli efir",
+            i1: <i1 class="fas fa-chevron-right"></i1>
+        },
+    ]
+
     return (
         <div className={"menu " + (menuOpen && 'active2')}>
             <div className="left">
                 <ul className="ul1">
-                    <li className="li3">
-                        <PermIdentityOutlinedIcon className="icon1" />
-                        <a href="/#">Kirish va ro'yxatdan o'tish</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <ShoppingBasketOutlinedIcon className="icon1" />
-                        <a href="/#">Mahsulotlar</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <WhatshotOutlinedIcon className="icon1" />
-                        <a href="/#">Yangi</a>
-                    </li>
-                    <li className="li2">
-                        <FaceIcon className="icon1" />
-                        <a href="/#">Parvarish</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <FaceOutlinedIcon className="icon1" />
-                        <a href="/#">Pardoz</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <i class="fas fa-tshirt"></i>
-                        <a href="/#">Moda</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <i class="fab fa-product-hunt"></i>
-                        <a href="/#">Parfyumeriya</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <HomeOutlinedIcon className="icon1" />
-                        <a href="/#">Uy</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <HealingOutlinedIcon className="icon1" />
-                        <a href="/#">Sog'liqni Saqlash</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <i class="fas fa-apple-alt"></i>
-                        <a href="/#">Mahsulatolar</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <BusinessCenterOutlinedIcon className="icon1" />
-                        <a href="/#">Biznes</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <CardGiftcardOutlinedIcon className="icon1" />
-                        <a href="/#">Aksiya</a>
-                    </li>
-                    <li className="li4">
-                        <h3>Batafsil</h3>
-                    </li>
-                    <li className="li2">
-                        <BusinessRoundedIcon className="icon1" />
-                        <a href="/#">Kompaniya</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <WidgetsOutlinedIcon className="icon1" />
-                        <a href="/#">Xizmat</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <i class="far fa-map"></i>
-                        <a href="/#">Ixtiyoriy</a>
-                        <i1 class="fas fa-chevron-right"></i1>
-                    </li>
-                    <li className="li2">
-                        <i class="fas fa-satellite-dish"></i>
-                        <a href="/#">Jonli efir</a>
-                    </li>
+                    {List.map((item) => (
+                        <li className="li2">
+                            {item.icon}
+                            <i>{item.i}</i>
+                            <a>{item.title}</a>
+                            <h3>{item.li4}</h3>
+                            <i className="i1">{item.i1}</i>
+                        </li>
+                    ))}
                 </ul>
             </div>
             <div className="right1"></div>
