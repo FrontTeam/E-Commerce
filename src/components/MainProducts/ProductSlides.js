@@ -37,7 +37,7 @@ class ProductSlides extends Component {
       const { items } = this.state;
         return (
         <ProductSlidesStyled>
-                <Carousel breakPoints={this.breakPoints}>
+                <Carousel className="carousel" breakPoints={this.breakPoints}>
               {items.map(item => <div className="item" key={item.id}>
                 <div className="product-top" >
                       <p className="new">New</p>
@@ -89,14 +89,24 @@ const ProductSlidesStyled = styled.div`
     text-decoration: none;
     background-color: white;
     height: 100%;
+    margin: 20px 0;
     padding: 10px;
-    border: 1px solid #00000050;
+    &:hover .login{
+             background-color: black;
+             color: white;
+            
+         }
     &:hover{
         box-shadow: 5px 0 15px #00000050;
     }
+    a{
+        display: flex;
+        justify-content: center;
+    }
     img{
-        width: 90%;
-        height: 60%;
+        width: 70%;
+        height: 50%;
+       
     }
     .title{
         font-size: 14px;
@@ -164,11 +174,7 @@ const ProductSlidesStyled = styled.div`
          width: 100%;    
          border: 1px solid #00000050;
          padding: 6px 10px;
-         &:hover{
-             background-color: black;
-             color: white;
-            
-         }
+         
      }
 
 `

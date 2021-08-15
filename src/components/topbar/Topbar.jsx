@@ -6,6 +6,7 @@ import Search from '@material-ui/icons/Search'
 import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
 import ImportContactsTwoToneIcon from '@material-ui/icons/ImportContactsTwoTone';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { Link } from "react-router-dom"
 
 const Topbar = ({menuOpen, setMenuOpen}) => {
 
@@ -39,9 +40,9 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
                     <a href="#">Buyurtmani qayerdan olish kerak</a>
                 </div>
                 <div className="minibox3">
-                    <a href="#">Kirish</a>
+                    <Link to="">Kirish</Link>
                     <span className="span1">|</span>
-                    <a href="#">Royhatdan O'tkazish</a>
+                    <Link to="/Register">Royhatdan O'tkazish</Link>
                 </div>
             </div>
             <div className="box3">

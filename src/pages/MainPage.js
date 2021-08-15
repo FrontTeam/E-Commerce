@@ -12,6 +12,7 @@ import Menu from '../components/menuList/MenuList';
 import Discount from '../components/Discount';
 
 
+
 function MainPage() {
 
     const [menuOpen,setMenuOpen] = useState(false)
@@ -23,12 +24,16 @@ function MainPage() {
             <MainCarousel />
             <LogReg />
             <MainBanner />
-            <NewProducts/>
             <NewProducts />
             <MainOffers />
             <BestSeller /> 
+<<<<<<< HEAD
             <Discount/>
             <Footer/>
+=======
+            <Footer />
+
+>>>>>>> 558acc53d507b48fc59f1c0bcc419c71d72f8543
         </div>
     )
 }
