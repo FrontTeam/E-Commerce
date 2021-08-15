@@ -9,6 +9,7 @@ import MainOffers from '../components/MainOffers/MainOffers';
 import BestSeller from '../components/BestSeller/BestSeller';
 import { useState } from 'react'
 import Menu from '../components/menuList/MenuList';
+import Discount from '../components/Discount';
 
 
 function MainPage() {
@@ -26,6 +27,7 @@ function MainPage() {
             <NewProducts />
             <MainOffers />
             <BestSeller /> 
+            <Discount/>
             <Footer/>
         </div>
     )
