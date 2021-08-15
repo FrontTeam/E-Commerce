@@ -9,7 +9,7 @@ function NewProducts() {
         <NewProductsStyled>
             <div className="AllTitle">
                 <Title title={'Yangi narsalar'} />
-                <NavLink to="/allNewProduct"> Hammasini korish </NavLink>
+                <NavLink  className="link" to="/allNewProduct"> Hammasini korish </NavLink>
             </div>
             <ProductSlides/>
         </NewProductsStyled>
@@ -22,8 +22,12 @@ background-color: #cccccc50;
 margin-top: 50px;
 .AllTitle{
     display: grid;
-    grid-template-columns:90% 10%;
+    grid-template-columns:80% 20%;
     align-items:center;
+    .link{
+        color: black;
+        font-size: 18px;
+    }
 }
 `
 export default NewProducts
