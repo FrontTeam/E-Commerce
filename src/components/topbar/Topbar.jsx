@@ -8,7 +8,7 @@ import ImportContactsTwoToneIcon from '@material-ui/icons/ImportContactsTwoTone'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { Link } from "react-router-dom"
 
-const Topbar = ({menuOpen, setMenuOpen}) => {
+const Topbar = ({ menuOpen, setMenuOpen }) => {
 
     const [closedd, setClosedd] = useState(false)
     const [larged, setLarged] = useState(false)
@@ -52,8 +52,8 @@ const Topbar = ({menuOpen, setMenuOpen}) => {
                         <div className="line4"></div>
                         <div className="line5"></div>
                     </div>
-                    <img src="https://img.faberlic.com/medias/faberlic-logo.svg?context=bWFzdGVyfGltYWdlc3w5NTE1fGltYWdlL3N2Zyt4bWx8c3lzLW1hc3Rlci9
-                   pbWFnZXMvaDNlL2gwNy9oMDAvOTAxODg4NTkzMTAzOC9mYWJlcmxpY19sb2dvLnN2Z3w1OWZiY2JhNDA4MzkzYzZjNGJmNDgwNDkwODU1NGY3ODdhMmU3NzQwZGRmNjNiZThjOWEwYzZiODE1OWRlNTM2"/>
+                    <Link to="/"><img src="https://img.faberlic.com/medias/faberlic-logo.svg?context=bWFzdGVyfGltYWdlc3w5NTE1fGltYWdlL3N2Zyt4bWx8c3lzLW1hc3Rlci9
+                   pbWFnZXMvaDNlL2gwNy9oMDAvOTAxODg4NTkzMTAzOC9mYWJlcmxpY19sb2dvLnN2Z3w1OWZiY2JhNDA4MzkzYzZjNGJmNDgwNDkwODU1NGY3ODdhMmU3NzQwZGRmNjNiZThjOWEwYzZiODE1OWRlNTM2"/></Link>
                 </div>
                 <div className="child2">
                     <Search className={"search " + (larged && 'active1')} />
