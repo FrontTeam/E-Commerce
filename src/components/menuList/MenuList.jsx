@@ -12,6 +12,7 @@ import CardGiftcardOutlinedIcon from '@material-ui/icons/CardGiftcardOutlined';
 import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
 import WidgetsOutlinedIcon from '@material-ui/icons/WidgetsOutlined';
 import { useState } from 'react'
+import { Link } from "react-router-dom"
 
 const MenuList = ({ menuOpen, setMenuOpen }) => {
 
@@ -21,7 +22,7 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
         {
             id: "1",
             icon: <PermIdentityOutlinedIcon className="icon1" />,
-            title: "Kirish va ro'yxatdan o'tish",
+            title: <Link to="/Register">"Kirish va ro'yxatdan o'tish"</Link>,
             i1: <i1 class="fas fa-chevron-right"></i1>
         },
         {
@@ -63,7 +64,7 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
         {
             id: "8",
             icon: <HomeOutlinedIcon className="icon1" />,
-            title: "Uy",
+            title: <Link to="/">Uy</Link>,
             i1: <i1 class="fas fa-chevron-right"></i1>
         },
         {

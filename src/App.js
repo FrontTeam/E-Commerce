@@ -3,24 +3,25 @@ import MainPage from './pages/MainPage';
 import "../src/index.css"
 import {BrowserRouter, Switch , Route} from "react-router-dom"
 import AllNewProduct from '../src/pages/AllNewProduct';
-import ForRegister from './pages/ForRegister';
+// import ForRegister from './pages/ForRegister';
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-      <Switch>
+              <Switch>
                     
-           <Route exact path="/" >
-             <MainPage />
-           </Route>
+                <Route exact path="/" >
+                  <MainPage />
+                </Route>
 
-           <Route path="/Register" component={ForRegister} />
-                
-           <Route exact path="/allNewProduct">
-             <AllNewProduct/>
-           </Route>    
-      </Switch>
+                {/* <Route path="/Register" component={ForRegister} /> */}
+                      
+                <Route exact path="/allNewProduct">
+                  <AllNewProduct/>
+                </Route>
+
+              </Switch>
             </BrowserRouter>
         );
     }
