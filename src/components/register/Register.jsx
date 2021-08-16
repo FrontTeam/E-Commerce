@@ -10,7 +10,7 @@ const Register = () => {
     return (
         <div className="register">
             <div className="left2">
-                <img src={Regpage} />
+                <img src={Regpage} alt="" />
             </div>
             <div className="right2">
                 <h1>Ro'yxatdan Otmoq</h1>
