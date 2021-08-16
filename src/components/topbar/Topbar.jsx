@@ -8,7 +8,7 @@ import ImportContactsTwoToneIcon from '@material-ui/icons/ImportContactsTwoTone'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { Link } from "react-router-dom"
 
-const Topbar = ({ menuOpen, setMenuOpen }) => {
+const Topbar = ({ menuOpen, setMenuOpen}) => {
 
     const [closedd, setClosedd] = useState(false)
     const [larged, setLarged] = useState(false)
