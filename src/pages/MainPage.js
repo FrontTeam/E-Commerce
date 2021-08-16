@@ -20,7 +20,6 @@ function MainPage() {
     return (
         <div>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-            ''
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <MainCarousel />
             <LogReg />
@@ -30,8 +29,6 @@ function MainPage() {
             <BestSeller /> 
             <Discount/>
             <Footer/>
-            <Footer />
-
         </div>
     )
 }
