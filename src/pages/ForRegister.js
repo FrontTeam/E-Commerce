@@ -15,6 +15,7 @@ const ForRegister = () => {
             ''
             <MenuList menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Register />
+            ''        
             <Footer />
         </div>
     );

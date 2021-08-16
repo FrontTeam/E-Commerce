@@ -44,7 +44,9 @@
 {
     width: 70%;
     margin-left: 30px;
-    height: 720px;
+    flex-direction: column;
+    display: flex;
+    height: 740px;
 }
 .right2 .row .col-6
 {
@@ -180,7 +182,8 @@
 {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 60px;
+    margin-bottom: 20px;
     overflow: hidden;
     justify-content: flex-start;
 }
@@ -200,4 +203,38 @@
     margin: 3px 3px 3px 4px;
     padding: initial;
     border: initial;
+}
+.right2 .row .regbtn
+{
+    width: 50%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #000;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    outline: none;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.right2 .row .regbtn .link
+{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+.right2 .row .link1
+{
+    color: black;
+    cursor: pointer;
+    font-size: 12px;
+}
+.right2 .row .h5
+{
+    font-size: 12px;
+    letter-spacing: 0px;
+}
+.right2 .row .h5 .link2
+{
+    color: #111;
 }

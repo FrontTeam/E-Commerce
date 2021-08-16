@@ -61,7 +61,7 @@ const Register = () => {
                         </div>
 
                         <button className="regbtn">
-                            <Link to="/">Ro'yhatdan O'tish</Link>
+                            <Link to="/" className="link">Ro'yhatdan O'tish</Link>
                         </button>
                         <Link to="/" className="link1">"Faberlik AJ shaxsiy ma'lumotlarni qayta ishlashga doir siyosati"</Link>
                         <h5 className="h5">
