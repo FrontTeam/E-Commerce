@@ -98,21 +98,6 @@ a{
         text-decoration:underline
     }
 }
-<<<<<<< HEAD
-    .container{
-        padding: 32px 80px 37px;
-        background: #fafafa;
-    }
-    .footerRow{
-        display: flex;
-        padding-top: 50px;
-
-    }
-    .footerLogo img{
-        width: 83px;
-    }
-    .footerMenu{
-=======
 .container{
     padding: 32px 80px 37px;
 }
@@ -124,7 +109,6 @@ a{
     width: 83px;
 }
 .footerMenu{
->>>>>>> 13956d55815c22872ebae0ee6de5176e13659948
         display: flex;
         margin: 0 60px;
     }
