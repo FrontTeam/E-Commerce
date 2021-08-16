@@ -30,7 +30,7 @@ function MainPage() {
             <BestSeller /> 
             <Discount/>
             <Footer/>
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

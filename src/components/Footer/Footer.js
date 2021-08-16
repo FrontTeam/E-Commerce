@@ -77,7 +77,9 @@ export const Footer = () => {
     )
 }
 const  FooterWrapper = styled.div`
-
+overflow: hidden;
+background-color:#fafafa;
+z-index: -1;
 span{
     font-size: 15px;
     line-height: 1.125rem;
@@ -96,18 +98,17 @@ a{
         text-decoration:underline
     }
 }
-    .container{
-        padding: 32px 80px 37px;
-    }
-    .footerRow{
-        display: flex;
-        padding-top: 50px;
-
-    }
-    .footerLogo img{
-        width: 83px;
-    }
-    .footerMenu{
+.container{
+    padding: 32px 80px 37px;
+}
+.footerRow{
+    display: flex;
+    padding-top: 50px;
+}
+.footerLogo img{
+    width: 83px;
+}
+.footerMenu{
         display: flex;
         margin: 0 60px;
 
@@ -132,6 +133,8 @@ a{
         li{
             list-style-type: none;
             margin: 0 18px 13px 0;
+            overflow: hidden;
+
             a{
                 font-size: 20px;
             }
@@ -147,6 +150,7 @@ a{
         font-size: 13px;
         .lastImg{
             margin: 12px 0;
+            overflow: hidden;
             a{
                 margin: 0 10px;
             }
