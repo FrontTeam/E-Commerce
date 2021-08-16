@@ -4,6 +4,7 @@ import "../src/index.css"
 import {BrowserRouter, Switch , Route} from "react-router-dom"
 import AllNewProduct from '../src/pages/AllNewProduct';
 import ForRegister from './pages/ForRegister';
+//import Footer from './components/Footer';
 
 class App extends Component {
     render() {
@@ -14,9 +15,7 @@ class App extends Component {
                 <Route exact path="/" >
                   <MainPage />
                 </Route>
-
-               <Route path="/Register" component={ForRegister} />
-                      
+                <Route path="/Register" component={ForRegister} />           
                 <Route exact path="/allNewProduct">
                   <AllNewProduct/>
                 </Route>

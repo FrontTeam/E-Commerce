@@ -163,6 +163,7 @@ const DiscountWrapper = styled.div`
         img{
             max-width: 100%;
             min-width: 100%;
+            max-height: 100%;
         }
         .discountBlock{
             .plusIcon1{
@@ -270,6 +271,7 @@ const DiscountWrapper = styled.div`
             }
         }
         .discountBlock:nth-child(2){
+            z-index: 2;
             .plusIcon1{
                 position: absolute;
                 top: 325px;
@@ -288,6 +290,7 @@ const DiscountWrapper = styled.div`
             }
         }
         .discountBlock:nth-child(3){ 
+            z-index: 3;
             .plusIcon1{
                 position: absolute;
                 top: 348px;
@@ -306,6 +309,7 @@ const DiscountWrapper = styled.div`
             }
         } 
         .discountBlock:nth-child(4){ 
+            z-index: 4;
             .plusIcon1{
                 position: absolute;
                 top: 337.5px;
@@ -324,6 +328,7 @@ const DiscountWrapper = styled.div`
             }
         } 
         .discountBlock:nth-child(5){ 
+            z-index: 4;
             .plusIcon1{
                 position: absolute;
                 top: 254px;
@@ -342,6 +347,7 @@ const DiscountWrapper = styled.div`
             }
         } 
         .discountBlock:nth-child(6){ 
+
             .plusIcon1{
                 position: absolute;
                 top: 92.5px;

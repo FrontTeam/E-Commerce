@@ -12,6 +12,7 @@ function AllNewProduct() {
     return (
         <div>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+            ''
             <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <MainSections/>
             <Footer/>
