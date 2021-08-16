@@ -37,6 +37,7 @@ const Register = () => {
                                 </div>
                                 <div className="col-8">
                                     <TextField id="punkt" type="text" label="Aholi punkti *" fullWidth />
+                                    
                                     <div className="box">
                                         <div className="searchbox">
                                             <Search className="searchicon" />
