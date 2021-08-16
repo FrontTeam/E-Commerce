@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PersonIcon from '@material-ui/icons/Person';
+import {NavLink} from 'react-router-dom'
 
 function LogReg() {
     return (
@@ -25,9 +26,9 @@ function LogReg() {
                 <p>
                 Shuningdek, 26 iyuldan 15 avgustgacha biz birinchi xarid uchun, teksturali niqoblar to'plamini beramiz.
                 </p>
-                <a className="register"  href="/register">
+                <NavLink className="register"  to="/register">
                     Ro'yxatdan o'tkazish
-                </a>
+                </NavLink>
             </div>
         </LogRegStyled>
     )
@@ -71,6 +72,17 @@ margin-top: 50px;
          }
      }
      .register{
+         height: 45px;
+         position: absolute;
+         bottom: 10px;
+         right: 30px;
+         text-decoration: none;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 40%;    
+         border: 1px solid #00000050;
+         padding: 10px 20px;
          background-color: black;
          color:white;
          &:hover{
@@ -79,7 +91,7 @@ margin-top: 50px;
          }
      }
 
-     a{
+     .register , .login{
          position: absolute;
          bottom: 10px;
          right: 30px;

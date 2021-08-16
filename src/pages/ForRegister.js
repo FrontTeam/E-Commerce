@@ -1,9 +1,9 @@
 import React from 'react';
 import Topbar from '../components/topbar/Topbar';
 import MenuList from '../components/menuList/MenuList'
-import Footer from '../components/Footer';
 import Register from '../components/register/Register';
 import { useState } from 'react'
+import Footer from '../components/Footer';
 
 const ForRegister = () => {
 
@@ -15,7 +15,6 @@ const ForRegister = () => {
             ''
             <MenuList menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Register />
-            ''        
             <Footer />
         </div>
     );

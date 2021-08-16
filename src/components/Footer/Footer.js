@@ -96,6 +96,7 @@ a{
         text-decoration:underline
     }
 }
+<<<<<<< HEAD
     .container{
         padding: 32px 80px 37px;
         background: #fafafa;
@@ -108,6 +109,8 @@ a{
     .footerLogo img{
         width: 83px;
     }
+=======
+>>>>>>> 3db65a25a4f78cbf16b37deb51eb2e674d8ae9d6
 .container{
     padding: 32px 80px 37px;
 }

@@ -1,8 +1,22 @@
 .register
 {
     width: 100%;
+<<<<<<< HEAD
+=======
+    height: 80vh;
+>>>>>>> 3db65a25a4f78cbf16b37deb51eb2e674d8ae9d6
     position: relative;
-    margin-top: 220px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-1
+{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-top:0px;
     display: flex;
     justify-content: center;
 }
@@ -45,7 +59,8 @@
     margin-left: 30px;
     flex-direction: column;
     display: flex;
-    height: 740px;
+    height: 720px;
+    background-color: #fff;
 }
 .right2 .row .col-6
 {
