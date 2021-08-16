@@ -12,6 +12,7 @@ const ForRegister = () => {
     return (
         <div>
             <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+            ''
             <MenuList menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <Register />
             <Footer />

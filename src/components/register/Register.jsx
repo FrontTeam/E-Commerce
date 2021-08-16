@@ -1,7 +1,7 @@
 import React from 'react';
 import './register.css'
 import Regpage from '../../images/regpage.jpg'
-import { TextField, Checkbox, FormControl } from '@material-ui/core';
+import { TextField, Checkbox,} from '@material-ui/core';
 import Search from '@material-ui/icons/Search'
 import { Link } from "react-router-dom"
 
