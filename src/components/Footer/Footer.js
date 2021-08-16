@@ -98,6 +98,7 @@ a{
 }
     .container{
         padding: 32px 80px 37px;
+        background: #fafafa;
     }
     .footerRow{
         display: flex;
@@ -110,7 +111,6 @@ a{
     .footerMenu{
         display: flex;
         margin: 0 60px;
-
     }
     .d-flex{
         display: flex;

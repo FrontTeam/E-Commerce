@@ -1,8 +1,9 @@
 import React from 'react';
 import './register.css'
 import Regpage from '../../images/regpage.jpg'
-import { TextField, Checkbox } from '@material-ui/core';
+import { TextField, Checkbox, FormControl } from '@material-ui/core';
 import Search from '@material-ui/icons/Search'
+import { Link } from "react-router-dom"
 
 
 const Register = () => {
@@ -58,12 +59,17 @@ const Register = () => {
                             <p>
                                 FABERLIC onlayn-do'koni orqali buyurtmalarni amalga oshirish uchun ushbu shaxsiy ma'lumotlarni qayta ishlashga rozilik bildiraman</p>
                         </div>
+
+                        <button className="regbtn">
+                            <Link to="/">Ro'yhatdan O'tish</Link>
+                        </button>
+                        <Link to="/" className="link1">"Faberlik AJ shaxsiy ma'lumotlarni qayta ishlashga doir siyosati"</Link>
+                        <h5 className="h5">
+                            "Ro'yxatdan o'tish" tugmasini bosish orqali <Link to="/" className="link2">Ommaviy taklif</Link>shartlariga rozilik bildiraman.
+                        </h5>
                     </div>
                 </div>
 
-                <div className="childitem3">
-
-                </div>
             </div>
         </div>
     );

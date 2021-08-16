@@ -30,7 +30,6 @@ function MainPage() {
             <BestSeller /> 
             <Discount/>
             <Footer/>
-            <Footer />
         </div>
     )
 }
