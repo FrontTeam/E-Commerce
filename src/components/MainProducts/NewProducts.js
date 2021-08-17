@@ -29,5 +29,27 @@ margin-top: 50px;
         font-size: 18px;
     }
 }
+@media (max-width:768px){
+    .AllTitle{
+        grid-template-columns: 60% 40%;
+    }
+}
+
+@media (max-width:600px){
+    .AllTitle{
+        grid-template-columns: 50% 50%;
+        .link{
+          display: flex;
+          justify-content: flex-end;
+          padding-right: 10px;
+          font-size: 16px;
+        }
+    }
+}
+@media (max-width:368px){
+    .link{
+        font-size: 14px;
+    }
+}
 `
 export default NewProducts

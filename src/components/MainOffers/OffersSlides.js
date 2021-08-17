@@ -71,11 +71,13 @@ const OfferSlidesStyled = styled.div`
 .item{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
     img{
-        width: 80%;
+        width: 100%;
     }
     p{
-        width: 80%;
+        width: 100%;
         text-align: justify;
         padding: 10px 0;
         font-size: 14px;
@@ -114,5 +116,24 @@ const OfferSlidesStyled = styled.div`
     outline: none;
     box-shadow: inset 0 0 1px 1px lightgrey;
 }
+
+@media (max-width:991px){
+     position: relative;
+  padding-bottom:30px;
+  .rec.rec-arrow{
+    position: absolute;
+    bottom: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+   
+    overflow:hidden;
+  }
+  .rec.rec-arrow-right{
+    right: 0;
+  }
+ 
+}
+
 `
 export default OffersSlides

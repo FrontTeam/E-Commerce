@@ -38,17 +38,20 @@ function LogReg() {
 const LogRegStyled = styled.div`
  margin-top: 50px;
  display: grid;
- grid-template-columns: 50% 50%;
+ grid-template-columns: 49% 49%;
  padding: 20px 80px 20px 60px ;
- gap: 20px;
+ gap: 2%;
  box-sizing:border-box;
-
+.left-content{
+    box-sizing: border-box;
+}
  div{
+     box-sizing:border-box!important;
      box-shadow: 2px 0 7px #00000050;
      padding: 30px;
      position: relative;
      .title{
-      margin-bottom: 20px;
+      padding:10px 0 20px 0;
       position: relative;
       &::after{
           position: absolute;
@@ -57,7 +60,8 @@ const LogRegStyled = styled.div`
           width: 50px;
           height: 2px;
           left: 0;
-          top: -10px;
+          top: 0px;
+          z-index: 2;
       }
      }
      p{
@@ -112,16 +116,40 @@ const LogRegStyled = styled.div`
  }
 
  @media (max-width:1200px){
-     
+     padding: 20px;
+     margin-top: 30px;
     }
 
  @media (max-width:1024px){
+    .login , .register{
+        width: 90%!important;
+       
+    }
+    div{
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    margin-top: 20px;
 
  }
 
  @media (max-width:991px){
-     
+    padding: 10px;
+    grid-template-columns: 100%;
+    margin-top: 10px;
+    gap: 30px;
+    .login , .register{
+     margin-left: 5%;
     }
+}
+@media (max-width:500px){
+    .login , .register{
+        width: 85%!important;
+       
+    }
+}
 
 `;
 export default LogReg

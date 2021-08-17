@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-function Title({title , link, to}) {
+function Title({title }) {
     return (
         <TitleStyled>
             <h2 className="title">
@@ -31,11 +31,38 @@ span{
     text-transform: uppercase;
     font-size: 24px;
 }
-.link{
-    text-decoration: underline;
-    font-weight: 400;
-    color: black;
-    font-size: 24px;
+
+
+@media (max-width:991px){
+    padding:60px  30px;
+    .title{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+}
+@media (max-width:768px){
+    justify-content: space-evenly;
+    padding:60px  10px;
+    .title{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+span{
+    width: 40%;
+}
+}
+
+@media (max-width:600px){
+    justify-content: flex-start;
+    span{
+        display: none;
+    }
+}
+
+@media (max-width:368px){
+    .title{
+        font-size:16px;
+    }
 }
 `;
 
