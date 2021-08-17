@@ -85,6 +85,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+    overflow: hidden;
     width: 8%;
     color: #797979;
     font-size: 14px;
