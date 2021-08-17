@@ -35,7 +35,6 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
             id: "3",
             icon: <WhatshotOutlinedIcon className="icon1" />,
             title: "Yangi",
-            i1: <i1 class="fas fa-chevron-right"></i1>
         },
         {
             id: "4",
@@ -89,7 +88,6 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
             id: "12",
             icon: <CardGiftcardOutlinedIcon className="icon1" />,
             title: "Aksiya",
-            i1: <i1 class="fas fa-chevron-right"></i1>
         },
         {
             li4: "Batafsil"
@@ -116,7 +114,6 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
             id: "16",
             i: <i class="fas fa-satellite-dish"></i>,
             title: "Jonli efir",
-            i1: <i1 class="fas fa-chevron-right"></i1>
         },
     ]
 
@@ -135,7 +132,125 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
                     ))}
                 </ul>
             </div>
-            <div className="right1"></div>
+            <div className="right1">
+                <h2>Mahsulotlar</h2>
+                <div className="bigBox-1">
+                    <div className="miniBox-1">
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="miniBox-1">
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="miniBox-1">
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                        <div className="item-1">
+                            <h3 className="h3-1">
+                                <Link to="/" className="link--1">Yangi Moda</Link>
+                            </h3>
+                            <ul className="ul-1">
+                                <Link className="link-1">Ayollar uchun</Link>
+                                <Link className="link-1">Erkaklar uchun</Link>
+                                <Link className="link-1">O'g'il bolalar uchun</Link>
+                                <Link className="link-1">Qizlar uchun</Link>
+                                <Link className="link-1">Katalogdagi obrazlar</Link>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

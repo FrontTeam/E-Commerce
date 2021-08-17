@@ -13,7 +13,7 @@
     position: absolute;
     top: 0px;
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -45,8 +45,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     line-height: normal;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     margin-right: 20px;
     overflow: hidden;
 }
@@ -223,10 +223,25 @@
     background-color: #000;
     font-size: 1.125rem;
     margin-bottom: 20px;
+    margin-left: 10px;
     outline: none;
     color: #fff;
     border: none;
     cursor: pointer;
+}
+.right2 .row .regbtn:hover
+{
+    background: #303030;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+    box-shadow: 0 0 12px 0 rgb(47 47 47 / 67%);
 }
 .right2 .row .regbtn .link
 {
