@@ -1,15 +1,16 @@
-//import { querySelectorAll } from 'dom-helpers';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 
 class MainSections extends Component {
     state = {
     active:false,
     active1:false,
-    active2:false
+    active2:false,
+    active3:false,
+    active4:false
 }
    
 render(){
@@ -32,9 +33,22 @@ render(){
                     <p className="filtr-title">
                         FILTRLAR
                     </p>
-                    <div className="filtr-table">
+
+                    <div className={this.state.active3 ? "filtr-table filter-accardion accardion-on" : "filtr-table filter-accardion"}>
                         <p>Narx oralig'ini tanlang (UZS)</p>
+                        <ExpandMoreIcon className={this.state.active3 ? "accardion-title translate-on" : "accardion-title"} onClick={() => this.setState({ active3: !this.state.active3 })} />
+
+                        <div className="accardion-content">
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                        </div>
+
                     </div>
+
+
                     <div className="filtr-table">
                         <p>Super narx</p>
                         <div className="check-section">
@@ -61,8 +75,19 @@ render(){
                             </div>  
                         </div>
                     </div>
-                    <div className="filtr-table">
+                    
+                    <div className={this.state.active4 ? "filtr-table filter-accardion accardion-on" : "filtr-table filter-accardion"}>
                         <p>Серия</p>
+                        <ExpandMoreIcon className={this.state.active4 ? "accardion-title translate-on" : "accardion-title"} onClick={() => this.setState({ active4: !this.state.active4 })} />
+
+                        <div className="accardion-content">
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                            <p>asdfg</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -80,6 +105,24 @@ padding: 0 60px;
 margin-top: 230px;
 display: grid;
 grid-template-columns: 25% 75%;
+.accardion-on{
+    height:auto!important;
+    overflow: visible!important;
+}
+.translate-on{
+    transform: rotate(180deg);
+}
+.filter-accardion{
+    height: 20px;
+    overflow: hidden; 
+    .accardion-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+}
+
 .top-link{
     display: flex;
     gap: 10px;
@@ -114,10 +157,11 @@ grid-template-columns: 25% 75%;
         font-size: 16px;
         font-weight: 600;
     }
+    
     .filtr-table{
         display: grid;
         grid-template-columns: 60% 40%;
-        margin-top: 20px;
+        margin-top: 20px;       
     }
     .check-section{
         display: flex;

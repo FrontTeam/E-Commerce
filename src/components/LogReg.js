@@ -36,11 +36,13 @@ function LogReg() {
 
 
 const LogRegStyled = styled.div`
-margin-top: 50px;
+ margin-top: 50px;
  display: grid;
  grid-template-columns: 50% 50%;
  padding: 20px 80px 20px 60px ;
  gap: 20px;
+ box-sizing:border-box;
+
  div{
      box-shadow: 2px 0 7px #00000050;
      padding: 30px;
@@ -109,6 +111,17 @@ margin-top: 50px;
      }
  }
 
+ @media (max-width:1200px){
+     
+    }
+
+ @media (max-width:1024px){
+
+ }
+
+ @media (max-width:991px){
+     
+    }
 
 `;
 export default LogReg
