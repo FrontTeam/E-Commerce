@@ -16,7 +16,6 @@ const Register = () => {
                 <div className="right2">
                     <h1>Ro'yxatdan Otmoq</h1>
                     <div className="childitem1">
-                        <h1>Ro'yxatdan Otmoq</h1>
                             <div className="row">
                                 <div className="col-6">
                                     <TextField id="lastName" type="text" label="Familiya *" fullWidth />
