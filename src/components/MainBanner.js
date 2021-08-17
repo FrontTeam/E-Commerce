@@ -19,6 +19,13 @@ overflow: hidden;
  img{
      width: 100%;
  }
+ @media (max-width:1200px){
+     padding: 20px;
+    }
+
+ @media (max-width:991px){
+    padding: 10px;
+ }
 `;
 
 export default MainBanner

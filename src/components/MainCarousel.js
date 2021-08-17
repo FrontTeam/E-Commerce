@@ -65,14 +65,15 @@ img{
 }
 
 @media (max-width:991px){
- 
+  padding-bottom:30px;
   .rec.rec-arrow{
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     box-shadow: none;
     background-color: transparent;
     color: black;
-    padding-bottom: 30px;
+   
+    overflow:hidden;
   }
   .rec.rec-arrow-right{
     right: 0;

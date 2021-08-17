@@ -174,5 +174,24 @@ const BestSellerSlidesStyled = styled.div`
          
      }
 
+
+ @media (max-width:991px){
+    position: relative;
+    padding-bottom:30px;
+    .rec.rec-arrow{
+    position: absolute;
+    bottom: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+   
+    overflow:hidden;
+  }
+  .rec.rec-arrow-right{
+    right: 0;
+  }
+ 
+}
+
 `
 export default BestSellerSlides
