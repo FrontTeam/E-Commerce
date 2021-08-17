@@ -35,14 +35,16 @@ class MainCarousel extends Component {
 }
 
 const MainCarouselStyled = styled.div`
+overflow: hidden;
+position: relative;
+padding-top: 250px;
 div{
   overflow: hidden;
 }
- position: relative;
-padding-top: 250px;
 img{
   width: 100%;
   height: 100%;
+ 
 }
 .rec.rec-arrow {
     border-radius: 0;
@@ -60,6 +62,22 @@ img{
 .rec-carousel-item:focus {
     outline: none;
     box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+@media (max-width:991px){
+ 
+  .rec.rec-arrow{
+    position: absolute;
+    bottom: -20px;
+    box-shadow: none;
+    background-color: transparent;
+    color: black;
+    padding-bottom: 30px;
+  }
+  .rec.rec-arrow-right{
+    right: 0;
+  }
+ 
 }
 `;
 export default MainCarousel;
