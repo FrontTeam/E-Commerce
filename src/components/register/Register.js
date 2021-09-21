@@ -11,7 +11,7 @@ const Register = () => {
         <div className="register">
             <div className="container-1">
                 <div className="left2">
-                    <img src={Regpage} />
+                    <img src={Regpage} alt="" />
                 </div>
                 <div className="right2">
                     <h1>Ro'yxatdan Otmoq</h1>
@@ -58,21 +58,19 @@ const Register = () => {
                                 </div>
                                 <div className="Chekbox2">
                                     <Checkbox />
-                                    <p>
-                                        FABERLIC onlayn-do'koni orqali buyurtmalarni amalga oshirish uchun ushbu shaxsiy ma'lumotlarni qayta ishlashga rozilik bildiraman</p>
+                                    <p>FABERLIC onlayn-do'koni orqali buyurtmalarni amalga oshirish uchun ushbu shaxsiy ma'lumotlarni qayta ishlashga rozilik bildiraman<Link to="/" className="link1 ms-2">"Faberlik AJ shaxsiy ma'lumotlarni qayta ishlashga doir siyosati"</Link> </p>
                                 </div>
 
                                 <button className="regbtn">
                                     <Link to="/" className="link">Ro'yhatdan O'tish</Link>
                                 </button>
-                                <Link to="/" className="link1">"Faberlik AJ shaxsiy ma'lumotlarni qayta ishlashga doir siyosati"</Link>
                                 <h5 className="h5">
                                     "Ro'yxatdan o'tish" tugmasini bosish orqali <Link to="/" className="link2">Ommaviy taklif</Link>shartlariga rozilik bildiraman.
                                 </h5>
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
             </div>
     );
 };

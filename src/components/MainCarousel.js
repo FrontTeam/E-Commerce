@@ -37,7 +37,7 @@ class MainCarousel extends Component {
 const MainCarouselStyled = styled.div`
 overflow: hidden;
 position: relative;
-padding-top: 250px;
+padding-top: 100px;
 div{
   overflow: hidden;
 }

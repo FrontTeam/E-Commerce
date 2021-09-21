@@ -72,7 +72,7 @@ const Discount = () => {
 							<div onMouseEnter={() => setOpen(i)} className='plusIcon1'>
 								<span>+</span>
 							</div>
-							<div className={`d-none  + ${i === open && "d-block"}`}>
+							<div className={`dnone  + ${i === open && "dblock"}`}>
 								<div className='triangle'></div>
 								<div className='shopping'>
 									<p className='close' onClick={() => setOpen("d-none")}>
@@ -155,6 +155,7 @@ const DiscountWrapper = styled.div`
 					flex-direction: column;
 					background: #fff;
 					border: 1px solid #f5f5f5;
+					z-index: 12;
 					&:hover {
 						box-shadow: 0 -2px 25px hsl(0deg 0% 64% / 60%);
 					}
@@ -756,58 +757,58 @@ const DiscountWrapper = styled.div`
 				}
 				.discountBlock:nth-child(3) {
 					.plusIcon1 {
-						top: 75px;
-						left: 200px;
+						top: 60px;
+						left: 180px;
 					}
 					.triangle {
-						top: 105px;
-						left: 200px;
+						top: 90px;
+						left: 180px;
 					}
 					.shopping {
-						top: 120px;
-						left: 64px;
+						top: 104px;
+						left: 52px;
 					}
 				}
 				.discountBlock:nth-child(4) {
 					.plusIcon1 {
-						top: 88.5px;
-						left: 282.5px;
+						top: 80px;
+						left: 250px;
 					}
 					.triangle {
-						top: 116px;
-						left: 282px;
+						top: 108px;
+						left: 255px;
 					}
 					.shopping {
-						top: 130px;
-						left: 149px;
+						top: 123px;
+						left: 103px;
 					}
 				}
 				.discountBlock:nth-child(5) {
 					.plusIcon1 {
 						top: 70px;
-						left: 352px;
+						left: 310px;
 					}
 					.triangle {
 						top: 100px;
-						left: 352px;
+						left: 305px;
 					}
 					.shopping {
 						top: 114px;
-						left: 175px;
+						left: 117px;
 					}
 				}
 				.discountBlock:nth-child(6) {
 					.plusIcon1 {
-						top: 8.5px;
-						left: 346.5px;
+						top: 0px;
+						left: 320px;
 					}
 					.triangle {
-						top: 40px;
-						left: 348px;
+						top: 30px;
+						left: 320px;
 					}
 					.shopping {
-						top: 54px;
-						left: 173px;
+						top: 44px;
+						left: 132px;
 					}
 				}
 			}

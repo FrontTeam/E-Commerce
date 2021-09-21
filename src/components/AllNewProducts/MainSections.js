@@ -128,8 +128,7 @@ grid-template-columns: 25% 75%;
     gap: 10px;
     font-size: 13px;
     color: #33333380;
-    margin-left: 60px;
-    margin-bottom: 50px;
+    margin: 0 0 50px 60px;
     .link{
         color: #33333380;
         text-decoration: none;

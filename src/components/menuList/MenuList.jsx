@@ -1,4 +1,3 @@
-import React from 'react';
 import './menulist.css'
 import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
 import ShoppingBasketOutlinedIcon from '@material-ui/icons/ShoppingBasketOutlined';
@@ -11,12 +10,13 @@ import HealingOutlinedIcon from '@material-ui/icons/HealingOutlined';
 import CardGiftcardOutlinedIcon from '@material-ui/icons/CardGiftcardOutlined';
 import BusinessRoundedIcon from '@material-ui/icons/BusinessRounded';
 import WidgetsOutlinedIcon from '@material-ui/icons/WidgetsOutlined';
-import { useState } from 'react'
+import ClearRoundedIcon from '@material-ui/icons/ClearRounded';
+
 import { Link } from "react-router-dom"
 
-const MenuList = ({ menuOpen, setMenuOpen }) => {
+const MenuList = ({ menuOpen, setMenuOpen, }) => {
 
-    const [selected, setSelected] = useState("Mahsulotlar")
+    // const [selected, setSelected] = useState("Mahsulotlar")
 
     const List = [
         {
@@ -119,20 +119,26 @@ const MenuList = ({ menuOpen, setMenuOpen }) => {
 
     return (
         <div className={"menu " + (menuOpen && 'active2')}>
+            <div className="None menuHeader text-center p-2">
+                <h5>Menu</h5>
+                <div className={"dnone d-flex justify-content-end closss " + (menuOpen && 'dnone')} onClick={() => setMenuOpen(!menuOpen)}>
+                    <ClearRoundedIcon />
+                </div>
+            </div>
             <div className="left">
                 <ul className="ul1">
                     {List.map((item) => (
                         <li className="li2">
                             {item.icon}
                             <i>{item.i}</i>
-                            <a>{item.title}</a>
+                            <a href="/#">{item.title}</a>
                             <h3>{item.li4}</h3>
                             <i className="i1">{item.i1}</i>
                         </li>
                     ))}
                 </ul>
             </div>
-            <div className="right1">
+            <div className="right1 ipadNone">
                 <h2>Mahsulotlar</h2>
                 <div className="bigBox-1">
                     <div className="miniBox-1">

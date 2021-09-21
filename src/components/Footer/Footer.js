@@ -27,7 +27,7 @@ export const Footer = () => {
 			<div className='container'>
 				<div className='footerRow'>
 					<div className='footerLogo'>
-						<a href='#'>
+						<a href='/#'>
 							<img src={logo} alt='error img ' />
 						</a>
 					</div>
@@ -113,22 +113,22 @@ export const Footer = () => {
 						<span>Ijtimoiy tarmoq</span>
 						<ul>
 							<li>
-								<a href='#'>{insta}</a>
+								<a href='/#'>{insta}</a>
 							</li>
 							<li>
-								<a href='#'>{vk}</a>
+								<a href='/#'>{vk}</a>
 							</li>
 							<li>
-								<a href='#'>{face}</a>
+								<a href='/#'>{face}</a>
 							</li>
 							<li>
-								<a href='#'>{ok}</a>
+								<a href='/#'>{ok}</a>
 							</li>
 							<li>
-								<a href='#'>{youtobe}</a>
+								<a href='/#'>{youtobe}</a>
 							</li>
 							<li>
-								<a href='#'>
+								<a href='/#'>
 									<img src={yandexZen} alt='error img' />
 								</a>
 							</li>
@@ -136,10 +136,10 @@ export const Footer = () => {
 						<div className='footerLaast'>
 							<p>Ilovani yuklab oling</p>
 							<div className='lastImg'>
-								<a href='#'>
+								<a href='/#'>
 									<img src={app} alt='' />
 								</a>
-								<a href='#'>
+								<a href='/#'>
 									<img src={googlePlay} alt='' />
 								</a>
 							</div>
@@ -260,6 +260,10 @@ const FooterWrapper = styled.div`
 		margin-bottom: 15px;
 		color: #222;
 	}
+	ul, li{
+		margin: 0;
+		padding: 0;
+	}
 
 	a {
 		font-size: 13px;
@@ -273,7 +277,7 @@ const FooterWrapper = styled.div`
 	}
 
 	.container {
-		padding: 32px 80px 37px;
+		padding: 32px 60px 37px;
 	}
 	.footerRow {
 		display: flex;
@@ -292,7 +296,7 @@ const FooterWrapper = styled.div`
 	}
 
 	.pright {
-		padding: 0 60px;
+		padding: 0 40px;
 	}
 	.footerSocialNetwork {
 		padding-left: 30px;
@@ -346,6 +350,7 @@ const FooterWrapper = styled.div`
  @media only screen and (min-width:960px) and ( max-width: 1025px){
      .container {
         width: 100%;
+		padding: 32px 0 37px;
 		.pright {
     	padding: 0 25px;
 }
@@ -356,7 +361,7 @@ const FooterWrapper = styled.div`
 		.footerMenu {
 			margin:40px 0;
 			.pright {
-				padding: 0 110px 0 0;
+				padding: 0 80px 0 0;
 			}
 		}
 		.footerSocialNetwork {
@@ -365,7 +370,7 @@ const FooterWrapper = styled.div`
 			flex-direction: column;
 			align-items: center;
 			ul {
-				width: 287px;
+				width: 320px;
 				li{
 					margin-right: 30px;
 				}
@@ -389,7 +394,8 @@ const FooterWrapper = styled.div`
 
 @media only screen and (min-width:768px) and ( max-width: 960px){
 	.container {
-			width: 100%;
+		width: 100%;
+		padding: 32px 50px 37px;
 	}
 	.footerRow{
         display: block;
@@ -407,7 +413,7 @@ const FooterWrapper = styled.div`
 			align-items: center;
 			text-align:center;
 			ul{
-				width: 347px;
+				width: 390px;
 				margin-bottom: 20px;
 				li{
 					margin: 0 20px 13px;

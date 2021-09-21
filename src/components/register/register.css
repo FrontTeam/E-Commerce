@@ -1,3 +1,7 @@
+.MuiFormLabel-root {
+    font-size: 12px !important;
+}
+
 .register
 {
     width: 100%;
@@ -10,8 +14,6 @@
 }
 .container-1
 {
-    position: absolute;
-    top: 0px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -19,21 +21,17 @@
 }
 .left2
 {
-    width: 50%;
-    float: left;
     height: 100%;
 }
 .left2 img
 {
     height: 700px;
-    float: right;
     margin-top: 10px;
     margin-right: 20px;
 }
 .right2
 {
     width: 50%;
-    float: right;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -64,20 +62,17 @@
     margin-top: 5px;
     height: 55px;
     display: flex;
-    position: relative;
 }
 .right2 .row .col-8
 {
     margin-top: 5px;
     height: 55px;
     display: flex;
-    position: relative;
 }
 
 .right2 .row .col-8 .searchbox
 {
     display: flex;
-    position: absolute;
     right: 0px;
     margin-top: 10px;
     width: 160px;
@@ -88,18 +83,6 @@
     align-items: center;
     justify-content: center;
     border: 1px solid #d6d6d6;
-    border-top-color: rgb(214, 214, 214);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(214, 214, 214);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(214, 214, 214);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(214, 214, 214);
-    border-left-style: solid;
-    border-left-width: 1px;
     border-image-source: initial;
     border-image-slice: initial;
     border-image-width: initial;
@@ -171,9 +154,7 @@
     height: 15px;
     font-size: 14px;
     letter-spacing: 0.5px;
-    margin-top: 20px;
     overflow: hidden;
-    margin-bottom: 15px;
 }
 .right2 .row .Chekbox1
 {
@@ -233,8 +214,7 @@
 {
     background: #303030;
     background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
+    background-position: initial;
     background-size: initial;
     background-attachment: initial;
     background-origin: initial;
@@ -263,4 +243,148 @@
 .right2 .row .h5 .link2
 {
     color: #111;
+}
+
+@media only screen and (min-width:768px) and ( max-width:960px ){
+    .container {
+       width: 100%;
+    }
+
+    .register {
+        margin-top: 90px;
+    }
+
+    .left2 img {
+        height: 450px;
+    }
+
+    .right2 .row .col-8 {
+        width: auto;
+    }
+
+    .right2 .row .regbtn {
+        width: 100%;
+    }
+
+    .right2 .row h5 {
+        margin-top: 10px;
+    }
+
+}
+
+@media only screen and (min-width:500px) and ( max-width: 768px){
+    .container {
+       width: 100%;
+    }
+
+    .register{
+        height: 100%;
+        margin-top: 600px;
+    }
+    
+    .container-1{
+        flex-direction: column;
+    }
+
+    .left2 {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left2 img {
+        height: 550px;
+        float: none;
+        margin: 130px 0 0 47px;
+    }
+
+    .right2 .row {
+        width: 177%;
+        margin-left: 0;
+    }
+
+    .right2 .row .col-7 .col-5
+{
+    width: 41.666666666666%;
+}
+
+    .right2 {
+        margin: 0 0 585px 30px;
+    }
+
+    .right2 .row .col-6 {
+        width: 100%;
+    }
+
+    .right2 .row .regbtn {
+        width: 100%;
+    }
+
+    .right2 .row .Chekbox2 {
+        height: 95px;
+    }
+    
+}
+@media only screen and (min-width:360px) and ( max-width: 500px){
+    .container {
+       width: 100%;
+    }
+
+    .register{
+        height: 100%;
+        margin-top: 540px;
+    }
+    
+    .container-1{
+        flex-direction: column;
+    }
+
+    .left2 {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left2 img {
+        height: 430px;
+        float: none;
+        margin: 130px 0 0 20px;
+    }
+
+    .right2 .row {
+        width: 177%;
+        margin-left: 0;
+    }
+
+    .right2 .row .col-7 .col-5
+{
+    width: 41.666666666666%;
+}
+
+    .right2 {
+        margin: 0 0 585px 30px;
+    }
+
+    .right2 .row .col-6 {
+        width: 100%;
+    }
+
+    .right2 .row .regbtn, .col-8 {
+        width: 100%;
+    }
+
+    .right2 .row .regbtn {
+        height: 50px;
+        margin: -13px 0 0 0;
+    }
+    .col-8 {
+        width: 100% !important;
+    }
+
+    .right2 .row .Chekbox2 {
+        height: 125px;
+    }
+    
 }

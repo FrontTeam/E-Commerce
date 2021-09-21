@@ -7,12 +7,8 @@ function LogReg() {
     return (
         <LogRegStyled>
             <div className="left-content">
-                <h4 className="title">
-                FABERLIC ONLAYN-DO'KONIGA KIRISH
-                </h4>
-                <p>
-                Agar sizda yaratilgan hisob yozuvingiz bo'lsa, kirishni amalga oshiring.
-                </p>
+                <h4 className="title">FABERLIC ONLAYN-DO'KONIGA KIRISH</h4>
+                <p className="mb">Agar sizda yaratilgan hisob yozuvingiz bo'lsa, kirishni amalga oshiring.</p>
                 <a className="login" href="/#">
                     <PersonIcon className="PersonIcon" />
                     Kirish
@@ -20,15 +16,11 @@ function LogReg() {
             </div>
 
             <div className="right-content">
-            <h4 className="title">
-            RO'YXATDAN O'TISHDAN SO'NG DARHOL 20% CHEGIRMA OLING!
-                </h4>
-                <p>
-                Shuningdek, 26 iyuldan 15 avgustgacha biz birinchi xarid uchun, teksturali niqoblar to'plamini beramiz.
-                </p>
-                <NavLink className="register"  to="/register">
-                    Ro'yxatdan o'tkazish
-                </NavLink>
+                <h4 className="title">RO'YXATDAN O'TISHDAN SO'NG DARHOL 20% CHEGIRMA OLING!</h4>
+                    <p className="mb">Shuningdek, 26 iyuldan 15 avgustgacha biz birinchi xarid uchun, teksturali niqoblar to'plamini beramiz.</p>
+                    <NavLink className="register"  to="/register">
+                        Ro'yxatdan o'tkazish
+                    </NavLink>
             </div>
         </LogRegStyled>
     )
@@ -109,9 +101,9 @@ const LogRegStyled = styled.div`
          border: 1px solid #00000050;
          padding: 10px 20px;
          .PersonIcon{
-             position: absolute;
-             left: 20px;
-         }
+            position: absolute;
+            left: 20px;
+        }
      }
  }
 
@@ -135,21 +127,64 @@ const LogRegStyled = styled.div`
 
  }
 
- @media (max-width:991px){
+ @media only screen and (min-width:960px) and ( max-width: 1025px){
+    .container {
+       width: 100%;
+    }
     padding: 10px;
     grid-template-columns: 100%;
     margin-top: 10px;
+    display: flex;
     gap: 30px;
     .login , .register{
      margin-left: 5%;
     }
-}
-@media (max-width:500px){
-    .login , .register{
-        width: 85%!important;
-       
+    .title{
+        font-size:16px;
+    }
+    .mb{
+        margin-bottom: 20px !important;
+        font-size: .875rem;
     }
 }
+
+@media only screen and (min-width:500px) and ( max-width: 768px){
+    .container {
+       width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+
+    .mb{
+        margin-bottom: 60px !important;
+        font-size: .875rem;
+    }
+
+    .right-content{
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width:360px) and ( max-width: 500px){
+    .container {
+       width: 100%;
+    }
+    display: flex;
+    flex-direction: column;
+
+
+    .register , .login{
+        right: 16px !important;
+    }
+    .mb{
+        margin-bottom: 60px !important;
+        font-size: .875rem;
+    }
+
+    .right-content{
+        margin-top: 10px;
+    }
+}
+
 
 `;
 export default LogReg
